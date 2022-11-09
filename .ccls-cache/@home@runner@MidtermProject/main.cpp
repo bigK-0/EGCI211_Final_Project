@@ -12,7 +12,7 @@ int main(int argc, char* argv[]) {
   int i;
 
   cout<<endl;
-  cout<<"The average heart rate throughout the day of each professor:"<<endl<<endl;
+  cout<<"The average heart rate of each professor:"<<endl<<endl;
   cout<<setw(10)<<"professor"<<setw(5)<<"age"<<setw(18)<<"heart rate(bpm)"<<endl;
   for(i=1;i<argc-1;i+=3)   {
     (*pt_data).setInfo(argv[i],atoi(argv[i+1]),atoi(argv[i+2]));

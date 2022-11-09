@@ -9,12 +9,12 @@ private:
 public:
   void setInfo(string, int, int);
   data();
-  data* get_next();
-  void set_next(data*);
   void print();
-  string get_name(){return name;}
   int get_age(){return age;}
   int get_heartRate(){return heartRate;}
+  //string get_name(){return name;}
+  //data* get_next();
+  //void set_next(data*);
 };
 
 void data::setInfo(string n, int a, int h){
@@ -25,6 +25,11 @@ void data::setInfo(string n, int a, int h){
 data::data(){
 
 }
+
+void data::print(){ 
+    cout<<setw(10)<<name<<setw(5)<<age<<setw(18)<<heartRate<<endl; 
+}
+
 /*data::data(){
   cout<<"Input your name: "<<endl;
   cin>>name;
@@ -34,14 +39,11 @@ data::data(){
   cin>>heartRate;
 }*/ 
 
-data* data::get_next(){
+/*data* data::get_next(){
     return next;
-}
+}*/
 
-void data::set_next(data* t){
+/*void data::set_next(data* t){
     next=t;
-}
+}*/
 
-void data::print(){ 
-    cout<<setw(10)<<name<<setw(5)<<age<<setw(18)<<heartRate<<endl; 
-}
