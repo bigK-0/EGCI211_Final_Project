@@ -9,4 +9,4 @@ Heart rate and anxiety
   - ttps://my.clevelandclinic.org/health/diseases/21677-heart-palpitations-and-anxiety
   - https://www.health.harvard.edu/heart-health/calm-your-anxious-heart
 
-Test input: ./a.out Mike 34 100 John 56 150 Jack 66 140 Felix 25 120
+Test input: ./a.out Mike 34 100 John 56 150 Jack 66 140 Felix 25 120 Joe 56 156

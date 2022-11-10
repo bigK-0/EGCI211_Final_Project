@@ -22,12 +22,6 @@ int main(int argc, char* argv[]) {
   }
 pt_data-=n;
 sort(pt_data, n);
-/*
-{  pt_data -= n;
-  for(i=1;i<argc-1;i+=3)   {
-    (*pt_data).print();
-    pt_data++;
-  }}
- */
+
   delete []pt_data;
   }
