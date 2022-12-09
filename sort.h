@@ -1,4 +1,6 @@
-void sort(data *a, int N){
+#include "data.h"
+
+data* sort(data *a, int N){
   int i, j, value;
   data* temp = (data*) malloc(sizeof(data)); 
 
@@ -21,7 +23,7 @@ void sort(data *a, int N){
   
    cout<<endl<<"Sorted list (High to Low heart rate):"<<endl<<endl;
   
-   cout<<setw(10)<<"professor"<<setw(5)<<"age"<<setw(18)<<"heart rate(bpm)"<<endl;
+   cout<<setw(10)<<"professor"<<setw(25)<<"department"<<setw(10)<<"subject"<<setw(10)<<"age"<<setw(18)<<"heart rate(bpm)"<<endl;
   
   for(i=0; i<N ;i++)   {
     (*(a+i)).print();
@@ -80,17 +82,22 @@ void sort(data *a, int N){
       l++;}
   } //end for 
   
-  cout<<"Professors with HIGH risk of anxiety: "<<endl<<endl;
-  cout<<setw(10)<<"professor"<<setw(5)<<"age"<<setw(18)<<"heart rate(bpm)"<<endl;
+  cout<<"Professors with HIGH risk of anxiety: "<<endl;
+  cout<<setw(10)<<"professor"<<setw(25)<<"department"<<setw(10)<<"age"<<setw(18)<<"heart rate(bpm)"<<endl;
   for(i=0; i<k;i++) {
     (*(high_risk+i)).print();
   }
+  if (k==0) cout<<setw(27)<<"-----None-----";
+  cout<<endl;
   cout<<endl;
   
-  cout<<"Professors with LOW risk of anxiety: "<<endl<<endl;
-  cout<<setw(10)<<"professor"<<setw(5)<<"age"<<setw(18)<<"heart rate(bpm)"<<endl;
+  cout<<"Professors with LOW risk of anxiety: "<<endl;
+  cout<<setw(10)<<"professor"<<setw(25)<<"department"<<setw(10)<<"subject"<<setw(10)<<"age"<<setw(18)<<"heart rate(bpm)"<<endl;
   for(i=0; i<l;i++) {
     (*(low_risk+i)).print();
   }
-  
+  if (l==0) cout<<setw(27)<<"-----None-----";
+  cout<<endl;
+  return high_risk;
 }
+

@@ -1,9 +1,9 @@
 
 compile: main.cpp 
-	 g++ main.cpp 
+	 g++ main.cpp -o final
 
-run: $(main.cpp)
-	 ./$(main.cpp)
+run: $ final
+	 ./$ final
 
 clean: $(main.cpp)
 	 rm $(main.cpp)

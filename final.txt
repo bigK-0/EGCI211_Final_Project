@@ -1,0 +1,35 @@
+Requirement 
+1. Extend your midterm project
+2. Add more features
+3. Use two of these in your project – stack, queue, bst, other linked list  
+
+Project submission : 13 December 
+– live presentation
+– Code
+– Report
+– Presentation 
+
++Bonus difficulty +advanced topic 5%
+
+PRESENTATION CONTENT
+Not over 12 minutes 
+Explain how it matches the theme
+•Display program
+•How the program meets requirement
+•Limitation
+
+REPORT  
+•Explain background and idea
+•all class template
+•Link to your code
+•Group member and work distributions
+•Requirements
+•Program limitations
+
+– Cleanliness, neatness (3%)
+•Clear and easy to read, contain table of contents & cover page
+– Explain theme matching & background (3%)
+– Requirements(3%)
+– Promptness, punctuality  (3%)
+– concise and easy to understand(3%)
+•Not more than 10 pages, without code
