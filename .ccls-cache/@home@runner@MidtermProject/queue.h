@@ -1,5 +1,5 @@
-#ifndef queue_h
-#define  queue_h
+//#ifndef queue_h
+//#define  queue_h
 #include "data.h"
 
 
@@ -23,8 +23,6 @@ Queue::Queue(){
 }
 
 Queue::~Queue(){
-  /*int i;
-  for(i=0;i<size;i++) dequeue();*/
   while(size>0) dequeue();
   cout<<"All queue has been deleted."<<endl;
 }
@@ -40,26 +38,13 @@ void Queue::enqueue(dataPtr d){
   //print_all();
 }
 
+
 string Queue::dequeue(){
-/*{{{  if(size>0){
-    dataPtr temp = headPtr;
-    string name = temp->get_name();
-    temp->set_hr(80); 
-    if(headPtr->get_next()!= NULL) headPtr = headPtr->get_next(); 
-    delete(temp); //error here
-    size--;
-    print_all();
-    return name;
-  }else{ 
-    cout<<"The queue is empty."<< endl;
-    return "NULL";
-  }   }}}*/
     if(size>0){
-    headPtr->set_hr(80); 
-    if(headPtr->get_next()!= NULL) headPtr = headPtr->get_next(); 
-    size--;
-    print_all();
-    return headPtr->get_name();;
+      if(headPtr->get_next()!= NULL) headPtr = headPtr->get_next(); 
+      size--;
+      print_all();
+      return headPtr->get_name();
   }else{ 
     cout<<"The queue is empty."<< endl;
     return "Nothing";
@@ -74,10 +59,10 @@ void Queue::print_all(){
       cout<<" -> ";
       current = current->get_next(); 
     }
-    current->print();
+    if(current!=NULL) current->print();
   }
   else cout<<"NULL";
   cout<<endl;
 }
 
-#endif
+//#endif

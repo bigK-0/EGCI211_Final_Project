@@ -6,7 +6,7 @@ using namespace std;
 
 class data{
   private:
-    string name, subject;
+    string name, department;
     int age, heartRate;
     data *next = NULL, *prev = NULL;
   public:
@@ -19,18 +19,21 @@ class data{
     int get_heartRate(){return heartRate;}
     string get_name(){return name;}
     data* get_next();
+    data* get_prev();
     void set_next(data*);
+    void set_prev(data*);
     void set_hr(int hr){ heartRate = hr; }
 };
 
 typedef data* dataPtr;
 
-void data::setInfo(string n, string s, int a, int h){
+void data::setInfo(string n, string d, int a, int h){
   name=n;
-  subject = s;
+  department = d;
   age=a;
   heartRate = h;
 }
+
 data::data(){
   setInfo("NULL","NULL",0,0);
 }
@@ -44,15 +47,23 @@ data::~data(){
 }
 
 void data::print(){ 
-    cout<<setw(10)<<name<<setw(10)<<subject<<setw(10)<<age<<setw(18)<<heartRate<<endl; 
+    cout<<setw(10)<<name<<setw(25)<<department<<setw(10)<<age<<setw(18)<<heartRate<<endl; 
 }
 
-data* data::get_next(){
+dataPtr data::get_next(){
     return next;
+}
+
+dataPtr data::get_prev(){
+    return prev;
 }
 
 void data::set_next(data* t){
     next=t;
+}
+
+void data::set_prev(data* t){
+    prev=t;
 }
 
 

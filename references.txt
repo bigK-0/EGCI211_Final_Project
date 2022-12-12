@@ -1,6 +1,3 @@
-Anxiety Screening Test
-  - https://www.hiv.uw.edu/page/mental-health-screening/gad-7 
-
 Average target heart rate by age
   - https://www.medicalnewstoday.com/articles/what-is-a-dangerous-heart-rate#ideal-heart-rates
   - https://www.heart.org/en/healthy-living/fitness/fitness-basics/target-heart-rates
@@ -8,7 +5,3 @@ Average target heart rate by age
 Heart rate and anxiety
   - ttps://my.clevelandclinic.org/health/diseases/21677-heart-palpitations-and-anxiety
   - https://www.health.harvard.edu/heart-health/calm-your-anxious-heart
-
-Test input: ./a.out Mike 34 100 John 56 150 Jack 66 140 Felix 25 120 Joe 25 160
-
-
