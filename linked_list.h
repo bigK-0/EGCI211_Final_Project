@@ -18,8 +18,7 @@ LL::LL() {
   size = 0;
 }
 
-LL::~LL() { //cout << "A list has been deleted" << endl; 
-  }
+LL::~LL() {}
 
 void LL::insert(dataPtr t) 
 // insert and sort list from highest at hol to lowest

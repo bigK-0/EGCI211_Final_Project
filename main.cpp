@@ -95,7 +95,7 @@ int main(int argc, char *argv[]) {
       } while (l == 0);
       cout << endl << "Age: ";
       cin >> age;
-      cout << endl << "Heart Rate: ";
+      cout << endl << "Average Heart Rate (bpm): ";
       cin >> hr;
       cout << endl;
       (*(pt_data + size)).setInfo(name, dp, age, hr);

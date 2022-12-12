@@ -22,8 +22,7 @@ Queue::Queue() {
   tailPtr = NULL;
 }
 
-Queue::~Queue() { //cout << "Deleting queue." << endl; 
-  }
+Queue::~Queue() {}
   
 void Queue::enqueue(dataPtr d) {
   dataPtr new_node = d;
@@ -34,7 +33,6 @@ void Queue::enqueue(dataPtr d) {
       tailPtr->set_next(new_node);
     tailPtr = new_node;
     size++;
-    //new_node->print();
   }
 }
 
